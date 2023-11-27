@@ -81,13 +81,25 @@ color: green;
 .container .shop-list .item {
 /* Explain why does this color not works, and how to fix make it work on
 1st list */
-//! Ans:
-// This doesn't work because the priority is lower than `.container .shop-list li.item`, so it will be overwritten by it.
-// To make this work, change the selector to `.container ol.shop-list li.item`
-
 // color: blue;
 // }
+
+//! Ans:
+// This doesn't work because the calculated specificity is lower than `.container .shop-list li.item`, so it will be overwritten by it.
+// To make this work, change the code to:
+
+// .container ol.shop-list .item {
+//   color: blue
+// }
+
+// This selector has the same specifity as `.container .shop-list li.item`. But because it appears later in the file, browser will apply this rule.
+
 /* Write styling make every other line give background color to next one */
+//?
+//! Ans
+// .container div + div {
+//   background-color: #006edc;
+// }
 
 //* 3.
 /**
