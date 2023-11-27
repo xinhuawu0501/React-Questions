@@ -1,0 +1,52 @@
+.container {
+  width: 350px;
+  height: 240px;
+  font-size: 16px;
+}
+
+.header {
+  width: 350px;
+  height: 44px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+* > button {
+  border: none;
+  background-color: transparent;
+}
+
+.month-select {
+  width: 44px;
+  height: 44px;
+  background-color: white;
+}
+
+.month-select:hover {
+  background-color: #e6e6e6;
+}
+
+.day-button {
+  width: 50px;
+  height: 36px;
+  background-color: white;
+  text-align: center;
+}
+
+.day-button:hover {
+  background-color: #e6e6e6;
+}
+
+.day-button.today {
+  background-color: #ffff76;
+}
+
+.day-button.active {
+  background-color: #006edc;
+}
+
+.day-button.non-current-month {
+  color: #757575;
+}
